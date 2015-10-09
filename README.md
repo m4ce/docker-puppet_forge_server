@@ -17,7 +17,7 @@ Generic configuration can be driven by exporting the following enviroment variab
 
 ## Run
 ```
-docker run -d --restart=always -p 8080 -e PUPPET_FORGE_SERVER_MODULEDIR=/srv/puppet-forge-server/modules -v <path_to_modules>:/srv/puppet-forge-server/modules m4ce/puppet-forge-server
+docker run -d --restart=always -p 8080:8080 -e PUPPET_FORGE_SERVER_MODULEDIR=/srv/puppet-forge-server/modules -v <path_to_modules>:/srv/puppet-forge-server/modules m4ce/puppet-forge-server
 ```
 
 ## Contact
