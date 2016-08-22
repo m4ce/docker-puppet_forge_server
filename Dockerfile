@@ -15,7 +15,7 @@ RUN yum install gcc make ruby-devel rubygems -y
 # Needed to fetch dependencies
 RUN gem install puppet-forge-server -v $PUPPET_FORGE_SERVER_VERSION
 RUN gem install puma
-RUN mkdir -p /srv/puppet-forge-server
+RUN mkdir -p $PUPPET_FORGE_SERVER_BASEDIR
 
 ADD run.sh /run.sh
 
