@@ -8,7 +8,7 @@ FROM centos:7
 MAINTAINER Matteo Cerutti <matteo.cerutti@hotmail.co.uk>
 
 ENV PUPPET_FORGE_SERVER_BASEDIR /srv/puppet-forge-server
-ENV PUPPET_FORGE_SERVER_VERSION 1.9.0
+ENV PUPPET_FORGE_SERVER_VERSION 1.10.0
 
 RUN yum install gcc make ruby-devel rubygems -y
 
