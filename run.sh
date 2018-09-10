@@ -33,4 +33,4 @@ if [ -n "$PUPPET_FORGE_SERVER_LOGDIR"  ]; then
 fi
 
 echo "Starting puppet-forge-server"
-puppet-forge-server --port $PUPPET_FORGE_SERVER_PORT --cache-basedir $PUPPET_FORGE_SERVER_CACHEDIR $PUPPET_FORGE_SERVER_OPTS
+exec puppet-forge-server --port $PUPPET_FORGE_SERVER_PORT --cache-basedir $PUPPET_FORGE_SERVER_CACHEDIR $PUPPET_FORGE_SERVER_OPTS
